@@ -21,6 +21,7 @@ filegroup(
 cc_library(
     name = "embedded_protobuf_lite",
     srcs = [
+        "src/libatomic.c",
         "src/google/protobuf/any_lite.cc",
         "src/google/protobuf/arena.cc",
         "src/google/protobuf/arenastring.cc",
