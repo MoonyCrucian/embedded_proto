@@ -4,13 +4,13 @@ package(default_visibility = ["//visibility:public"])
 exports_files(glob(["bin/*"]))
 
 config_setting(
-    name = "macos_arm",
-    values = {"proto_platform": "macos_arm64"},
+    name = "macos_arm64",
+    values = {"cpu": "darwin_arm64"},
 )
 
 config_setting(
-    name = "linux",
-    values = {"proto_platform": "linux_x64"},
+    name = "linux_x64",
+    values = {"cpu": "x86_64"},
 )
 
 filegroup(
